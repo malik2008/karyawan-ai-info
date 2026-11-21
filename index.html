@@ -1,17 +1,21 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Karyawan AI</title>
 <style>
-  :root { --bg: #f2f0eb; --ink: #181818; --red: #d62828; --muted: #5a5a5a; }
+  :root { --bg: #f2f0eb; --ink: #181818; --red: #d62828; --muted: #4a4a4a; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
-  h1 { font-size: 2.2rem; margin: 0 0 4px; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 2.4rem; margin: 0 0 4px; }
   .garis { width: 64px; height: 5px; background: var(--red); margin: 12px 0 28px; }
   p, li { color: var(--muted); }
   a { color: var(--red); }
+  .yt { display: flex; gap: 14px; align-items: center; background: #fff; border-radius: 8px;
+        padding: 14px 18px; margin: 24px 0; border: 1px solid #e2e0da; }
+  .yt svg { flex: none; }
+  .links a { display: inline-block; margin-right: 18px; font-weight: 600; }
   footer { margin-top: 40px; font-size: .9rem; color: var(--muted); }
 </style>
 </head>
@@ -19,17 +23,27 @@
 <main>
   <h1>Karyawan AI</h1>
   <div class="garis"></div>
-  <p><strong>Karyawan AI</strong> adalah alat otomatisasi pribadi yang membuat video promosi pendek
-     (produk affiliate) dan mengunggahnya ke channel/akun media sosial milik pemiliknya sendiri.</p>
-  <p><em>Karyawan AI is a personal automation tool that creates short promotional videos and uploads
-     them to the owner's own social media channels.</em></p>
+  <p><strong>Karyawan AI</strong> is a personal automation tool that turns the owner's product photos and notes
+     into short vertical videos (with AI-written narration and subtitles) and uploads them to the owner's own
+     YouTube channel as Shorts.</p>
+
+  <div class="yt">
+    <svg width="44" height="31" viewBox="0 0 44 31" aria-label="YouTube"><rect width="44" height="31" rx="8" fill="#FF0000"/><path d="M17.5 8.5v14l12-7z" fill="#fff"/></svg>
+    <div>This application uses <strong>YouTube API Services</strong> to upload videos.
+         By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</div>
+  </div>
+
   <ul>
-    <li>Hanya dipakai oleh pemilik alat ini, bukan layanan publik.</li>
-    <li>Tidak mengumpulkan data pengguna lain.</li>
-    <li>Akses YouTube dipakai hanya untuk mengunggah video ke channel pemilik.</li>
+    <li>Used only by its owner, for the owner's own channel — not a public service.</li>
+    <li>Requests only the <code>youtube.upload</code> permission.</li>
+    <li>Does not collect, sell or share data of other users.</li>
   </ul>
-  <p><a href="privacy.html">Kebijakan Privasi / Privacy Policy</a></p>
-  <footer>Kontak: <a href="https://github.com/malik2008">github.com/malik2008</a></footer>
+
+  <p class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </p>
+  <footer>Contact: <a href="https://github.com/malik2008">github.com/malik2008</a></footer>
 </main>
 </body>
 </html>

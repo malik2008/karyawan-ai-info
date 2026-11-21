@@ -1,57 +1,80 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kebijakan Privasi</title>
+<title>Privacy Policy — Karyawan AI</title>
 <style>
-  :root { --bg: #f2f0eb; --ink: #181818; --red: #d62828; --muted: #5a5a5a; }
+  :root { --bg: #f2f0eb; --ink: #181818; --red: #d62828; --muted: #4a4a4a; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
   h1 { font-size: 2rem; margin: 0 0 4px; }
   h2 { font-size: 1.15rem; margin-top: 28px; }
   .garis { width: 64px; height: 5px; background: var(--red); margin: 12px 0 28px; }
   p, li { color: var(--muted); }
   a { color: var(--red); }
+  .yt { border-left: 5px solid #ff0000; background: #fff; padding: 12px 16px; border-radius: 6px; }
+  nav a { margin-right: 16px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Kebijakan Privasi — Karyawan AI</h1>
+  <nav><a href="./">Home</a><a href="terms.html">Terms of Service</a></nav>
+  <h1>Privacy Policy — Karyawan AI</h1>
   <div class="garis"></div>
-  <p>Berlaku sejak 21 November 2026. <em>English summary at the bottom.</em></p>
+  <p>Effective date: 21 November 2026. (Ringkasan Bahasa Indonesia di bagian bawah.)</p>
 
-  <h2>1. Siapa yang memakai aplikasi ini</h2>
-  <p>Karyawan AI adalah alat pribadi. Aplikasi ini hanya digunakan oleh pemiliknya untuk akun dan
-     channel miliknya sendiri, dan tidak ditawarkan kepada publik.</p>
+  <h2>1. Who uses this application</h2>
+  <p>Karyawan AI is a personal automation tool operated by its owner. It is used only by the owner
+     for the owner's own YouTube channel and is not offered as a service to the public.</p>
 
-  <h2>2. Data Google/YouTube yang diakses</h2>
-  <p>Aplikasi meminta izin <code>youtube.upload</code> untuk satu keperluan: mengunggah video buatan
-     pemilik ke channel YouTube pemilik. Aplikasi tidak membaca, menyimpan, atau menganalisis data
-     YouTube lain (komentar, penonton, statistik, atau data akun pengguna lain).</p>
+  <h2>2. YouTube API Services</h2>
+  <div class="yt">
+    <p><strong>Karyawan AI uses YouTube API Services.</strong> By using Karyawan AI you agree to be bound
+       by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+       Information accessed through YouTube API Services is also subject to the
+       <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </div>
 
-  <h2>3. Penyimpanan</h2>
-  <p>Token akses disimpan terenkripsi sebagai <em>secret</em> di repositori GitHub privat milik
-     pemilik dan hanya dipakai oleh proses otomatis milik pemilik. Video dan teks yang dibuat
-     disimpan sementara untuk keperluan unggah.</p>
+  <h2>3. Information we access, collect and use</h2>
+  <ul>
+    <li>Karyawan AI requests only the OAuth scope <code>https://www.googleapis.com/auth/youtube.upload</code>.</li>
+    <li>It uses this access for one purpose: uploading videos created by the owner to the owner's own
+        YouTube channel, together with the title, description and tags written for that video.</li>
+    <li>It does not read, collect or analyze any other YouTube or Google account data (no comments,
+        subscribers, viewers, analytics, or data of other users).</li>
+  </ul>
 
-  <h2>4. Berbagi data</h2>
-  <p>Data tidak dijual, tidak dibagikan, dan tidak dipindahkan ke pihak ketiga, kecuali mengunggah
-     video ke platform yang dipilih pemilik (misalnya YouTube).</p>
+  <h2>4. Storage, sharing and cookies</h2>
+  <ul>
+    <li>The OAuth refresh token is stored encrypted as a secret in the owner's private GitHub repository
+        and is used only by the owner's automated job.</li>
+    <li>Karyawan AI does not sell, share or disclose user information to third parties. Finished videos are
+        sent only to the platform chosen by the owner (YouTube) and, for review, to the owner's private
+        Telegram chat. No YouTube account data is sent to Telegram.</li>
+    <li>Karyawan AI has no public website application and does not place cookies or tracking technologies
+        on any user's device.</li>
+  </ul>
 
-  <h2>5. Mencabut akses</h2>
-  <p>Akses dapat dicabut kapan saja melalui
-     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h2>5. Data retention and deletion</h2>
+  <ul>
+    <li>Generated video files are stored temporarily for at most 14 days and then deleted automatically.</li>
+    <li>Stored authorization data is deleted when access is revoked or the project is closed, and in any
+        case within 30 days after a deletion request.</li>
+    <li>You can revoke Karyawan AI's access to your Google account at any time through the
+        <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
+    <li>To request deletion of any stored data, contact the owner via
+        <a href="https://github.com/malik2008">github.com/malik2008</a>.</li>
+  </ul>
 
-  <h2>6. Kontak</h2>
-  <p><a href="https://github.com/malik2008">github.com/malik2008</a></p>
+  <h2>6. Changes</h2>
+  <p>Changes to this policy will be published on this page with an updated effective date.</p>
 
-  <h2>English summary</h2>
-  <p>Karyawan AI is a personal tool used only by its owner. It requests the
-     <code>youtube.upload</code> scope solely to upload the owner's videos to the owner's own channel.
-     It does not collect, sell or share user data. Tokens are stored encrypted in the owner's private
-     GitHub repository. Access can be revoked at
-     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h2>Ringkasan (Bahasa Indonesia)</h2>
+  <p>Karyawan AI adalah alat pribadi yang memakai Layanan YouTube API hanya untuk mengunggah video
+     pemilik ke channel YouTube pemilik. Dengan memakai alat ini Anda terikat pada Persyaratan Layanan
+     YouTube, dan data tunduk pada Kebijakan Privasi Google. Tidak ada data yang dijual atau dibagikan.
+     Akses dapat dicabut kapan saja lewat halaman keamanan akun Google.</p>
 </main>
 </body>
 </html>
